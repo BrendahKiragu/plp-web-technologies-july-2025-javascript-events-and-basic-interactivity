@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Interactive Web Page</h1>
+    <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Counter Game -->
+  <section class="counter-section">
+    <h2>🎮 Counter Game</h2>
+    <p id="counter">0</p>
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+    <button id="reset">Reset</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>❓ Frequently Asked Questions</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is DOM Manipulation?</h3>
+      <p class="faq-answer">It is using JavaScript to change the structure and content of a webpage dynamically.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is Event Handling?</h3>
+      <p class="faq-answer">It’s responding to user actions like clicks, typing, and mouse movements.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>📋 Sign Up Form</h2>
+    <form id="signup-form" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <span class="error" id="name-error"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" />
+      <span class="error" id="email-error"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" />
+      <span class="error" id="password-error"></span>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="success-message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
